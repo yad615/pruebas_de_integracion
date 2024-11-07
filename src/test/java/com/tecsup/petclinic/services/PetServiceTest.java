@@ -42,7 +42,7 @@ public class PetServiceTest {
     public void testFindPetByName() {
 
         String FIND_NAME = "Leo";
-        int SIZE_EXPECTED = 2; // Ajustado a 2 según el número de mascotas con el nombre "Leo"
+        int SIZE_EXPECTED = 2;
 
         List<Pet> pets = this.petService.findByName(FIND_NAME);
 
@@ -53,7 +53,7 @@ public class PetServiceTest {
     public void testFindPetByTypeId() {
 
         int TYPE_ID = 5;
-        int SIZE_EXPECTED = 4; // Ajustado a 4 según el número de mascotas con el TYPE_ID 5
+        int SIZE_EXPECTED = 4;
 
         List<Pet> pets = this.petService.findByTypeId(TYPE_ID);
 
@@ -64,7 +64,7 @@ public class PetServiceTest {
     public void testFindPetByOwnerId() {
 
         int OWNER_ID = 10;
-        int SIZE_EXPECTED = 4; // Ajustado a 4 según el número de mascotas con el OWNER_ID 10
+        int SIZE_EXPECTED = 4;
 
         List<Pet> pets = this.petService.findByOwnerId(OWNER_ID);
 
